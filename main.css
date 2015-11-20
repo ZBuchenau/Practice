@@ -1,0 +1,44 @@
+body {
+  background-image: url("file:///Users/zachbuchenau/Desktop/DSC_0030.jpeg");
+  background-position: 0% 0%;
+  background-size: auto 100vh;
+  overflow: hidden;
+  background-repeat: none;
+}
+
+.logo {
+  margin-left: 7.5%;
+  margin-top: 2rem;
+  height: 10rem;
+  width: 10rem;
+  float: left;
+  position: relative;
+  border: solid .1rem;
+}
+
+.maincontent {
+  height: 20rem;
+  width: 20rem;
+  float: left;
+  margin: 2rem;
+  margin-left: 4rem;
+  margin-right: 7.5%;
+  border: solid .1rem;
+}
+
+.bar1 {
+  height: 10rem;
+  width: 85%;
+  border: solid .1rem;
+  float: left;
+  margin-left: 7.5%;
+}
+
+.bar2 {
+  height: 10rem;
+  width: 85%;
+  border: solid .1rem;
+  float: left;
+  margin-left: 7.5%;
+  margin-top: 2rem;
+}

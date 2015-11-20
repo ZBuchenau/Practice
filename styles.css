@@ -1,0 +1,124 @@
+html {
+  background-color: gray;
+}
+
+header {
+  width: 100vw;
+  height: 25%;
+  float: left;
+  background-color: gray;
+  padding-bottom: 1rem;
+  margin-top: 0;
+}
+
+img {
+  float: left;
+  height: 4vh;
+  width: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.navigation {
+  height: 2rem;
+  width: 30vw;
+  margin-right: 1%;
+  margin-bottom: 4vh;
+  display: inline;
+}
+.arrowLeft {
+  float: left;
+  margin-left: 1rem;
+
+}
+
+.arrowRight {
+  float: left;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+}
+
+.headerPhoto {
+  width: 2rem;
+  height: 2rem;
+  float: left;
+  border: .1rem solid black;
+  border-radius: 50%;
+
+
+}
+
+.homeButton {
+  float: left;
+  margin-left: 1rem;
+
+}
+
+.headerBox {
+  height: 4vh;
+  width: 40vw;
+  border: .1rem solid black;
+  float: left;
+  display: inline;
+  margin-right: 0;
+  margin-left:5%;
+}
+
+.search {
+  float: left;
+  width: 20vw;
+  border: .1rem solid black;
+  margin-right: 3%;
+  margin-left: 1%;
+
+}
+
+.magGlass {
+  float: left;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+  background-color: gray;
+}
+
+thead td {
+  background-color: lightblue;
+}
+.table1 {
+  width: 75%;
+  margin-top: 1rem;
+  position: relative;
+  float: left;
+  margin-left: 12.5%;
+}
+
+.table1 h1 {
+  text-align: left;
+}
+
+td {
+  font-size: 1.5rem;
+  padding: .5rem;
+  border: .1rem solid;
+  height: 2rem;
+}
+
+tr{
+  border: .1rem solid;
+}
+
+.tableBackground {
+  float: left;
+  position: relative;
+  width: 100vw;
+  border: .1rem solid;
+  padding-bottom: 2rem;
+  background-color: white;
+}
