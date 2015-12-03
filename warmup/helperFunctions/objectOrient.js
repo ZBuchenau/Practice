@@ -59,8 +59,6 @@
 // ----------------------------------------------
 
 var Vector2 = function(x, y){
-  //if you had logic here you would have a bug
-  //that nobody would ever find
 
   return {
     x: this.x = x,
