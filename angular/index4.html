@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+    <link rel="stylesheet" href="main.css" charset="utf-8">
+
+  </head>
+  <body ng-cloak>
+    <h1>Angular Calculator</h1>
+    <div class="calculator">
+
+      <div class="viewPort" ng-model="viewPort" ng-init="">
+        <h1>{{calculation}}</h1>
+      </div>
+
+      <div class="" >
+
+      </div>
+
+      <div class="row1Buttons">
+        <input ng-model="one" type="button" name="one" value="1" ng-click="calculation = calculation + '1'"></input>
+        <input ng-model="two" type="button" name="two" value="2" ng-click="calculation = calculation + '2'"></input>
+        <input ng-model="three" type="button" name="three" value="3" ng-click="calculation = calculation + '3'"></input>
+        <input ng-model="plus" type="button" name="plus" value="+" ng-mousedown="calculation = calculation.parseInt() + +"></input>
+      </div>
+      <div class="row2Buttons">
+        <input ng-model="four" type="button" name="four" value="4" ng-click="calculation = calculation + '4'"></input>
+        <input ng-model="five" type="button" name="five" value="5" ng-click="calculation = calculation + '5'"></input>
+        <input ng-model="six" type="button" name="six" value="6" ng-click="calculation = calculation + '6'"></input>
+        <input ng-model="minus" type="button" name="minus" value="-" ng-mousedown="calculation = calculation.parseInt() + '-'"></input>
+      </div>
+
+      <div class="row3Buttons">
+        <input ng-model="seven" type="button" name="seven" value="7" ng-click="calculation = calculation + '7'"></input>
+        <input ng-model="eight" type="button" name="eight" value="8" ng-click="calculation = calculation + '8'"></input>
+        <input ng-model="nine" type="button" name="nine" value="9" ng-click="calculation = calculation + '9'"></input>
+        <input ng-model="times" type="button" name="times" value="*" ng-click="calculation = calculation.parseInt() + '*'"></input>
+      </div>
+
+      <div class="row4Buttons">
+        <input ng-model="clear" class="clearButton" type="button" name="clear" value="clear" ng-click="calculation = ''"></input>
+        <input ng-model="decimal" type="button" name="decimal" value="." ng-click="calculation = calculation + '.'"></input>
+        <input ng-model="zero" type="button" name="zero" value="0" ng-click="calculation = calculation + '0'"></input>
+        <input ng-model="enter" type="button" name="enter" value="enter" ng-click="calculation"></input>
+      </div>
+
+
+    </div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+  </body>
+</html>

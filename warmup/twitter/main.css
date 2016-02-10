@@ -1,0 +1,48 @@
+header {
+  background-image:
+  linear-gradient(
+    to right,
+    #2E9AFE, #00FFBF
+  );
+}
+
+
+.auth {
+  height: 4rem;
+  width: 13rem;
+  margin-top: 3rem;
+  margin-left: 1rem;
+  border-radius: .5rem;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: .1rem solid lightgrey;
+  font-weight: bold;
+}
+
+#titles {
+  text-align: center;
+  margin: 3rem;
+}
+
+#nav {
+  text-align: center;
+  padding: 0;
+}
+
+.navDropDown {
+    border-radius: 0;
+}
+
+button, select{
+  width: 12.5vw;
+  height: 6rem;
+  float: left;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: .1rem solid lightgrey;
+  border-radius: 0;
+ }
+
+ button:hover, select:hover {
+  border-bottom: .5rem solid #2E9AFE;
+}

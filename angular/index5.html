@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="demoApp">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- ADDING THIS STYLING FROM THE ANGULAR SITE MAKES SURE THE UNDEFINED ANGULAR INITIAL APPEARANCE SHOW UP -->
+    <style media="screen">
+    [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+      display: none !important;
+    }
+    </style>
+  </head>
+  <body ng-cloak>
+    <!--Setting an alias to the DemoController called DC  -->
+    <div class="" ng-controller="DemoController as DC">
+
+      <div class="DemoController as SC">
+
+      </div>
+
+      {{DC.test}}
+
+    </div>
+
+    {{20 + 20}}
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
+    <script type="text/javascript" src="demo_controller.js"></script>
+  </body>
+</html>

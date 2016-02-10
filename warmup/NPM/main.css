@@ -1,0 +1,59 @@
+body {
+  border: .1rem solid;
+}
+.nav1 {
+  width: 100%;
+  margin-right: 1rem;
+  height: 2rem;
+  padding-bottom: 1%;
+}
+
+.nav1 p {
+  display: inline;
+  float: left;
+  padding-right: 1rem;
+}
+
+.nav1 .leftButton {
+  float: left;
+  padding-right: 3rem;
+}
+
+.nav2 img {
+  float: left;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 3rem;
+}
+
+.nav2 {
+  display: inline;
+  height: 3rem;
+  margin-bottom: 2rem;
+}
+
+nav {
+  border: .1rem solid;
+}
+
+.rightNav {
+  float: right;
+}
+
+.searchBar {
+  height: 2rem;
+  width: 40%;
+}
+
+.mag {
+  height: 2rem;
+  width: 8%;
+}
+
+.nav2 p {
+  float: left;
+}
+
+.numbers {
+  text-align: center;
+}

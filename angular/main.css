@@ -1,0 +1,16 @@
+input {
+  border: .2rem outset;
+  height: 3rem;
+  width: 3rem;
+  margin: .3rem;
+}
+
+
+
+.viewPort {
+  width: 13.5rem;
+  height: 3rem;
+  border: .1rem solid black;
+  margin: .3rem;
+  padding: .3rem;
+}

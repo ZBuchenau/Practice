@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello, World!</title>
+  </head>
+  <body>
+
+    <input type="text" class="form-control" ng-model="lowerCase">
+
+
+    <h1>Yelling: {{lowerCase | lowercase}}</h1>
+    <h1>Yelling: {{lowerCase | uppercase}}</h1>
+
+________________________________________________________________________________
+
+
+    <h2>How many digits of pi do you want?</h2>
+    <select ng-model="piDigits" ng-init="piDigits = 1" class="" name="">
+      <option>1<option/>
+      <option>2<option/>
+      <option>3<option/>
+      <option>4<option/>
+    </select>
+    <h2>Here you go! The first {{piDigits}}
+      <ng-pluralize count="piDigits"
+                 when="{'1': 'digit',
+                     other: 'digits'}">
+</ng-pluralize>
+    of pi!</h2>
+    <h2>{{3.14159265359 | number: piDigits}}</h2>
+
+
+________________________________________________________________________________
+<h2>How much did your meal cost?<input type="number" class="form-control" ng-model="mealCost" placeholder=""></h2>
+<h2>How much do you want to tip?<input type="number" class="form-control" ng-model="tipPercentage" placeholder=""></h2>
+<h1>Subtotal: {{mealCost + (mealCost * (tipPercentage * .01)) | currency}}</h1>
+<h1>Tip: {{(mealCost * (tipPercentage * .01)) | currency}}</h1>
+_______________________________________________________________________________
+
+<script>
+angular.module("myMadLibs", [])
+  .controller("madLibs", function($scope) {
+    $scope.madLib = {};
+    $scope.madLib.name = '';
+    $scope.madLib.adj = '';
+    $scope.madLib.noun1 = '';
+    $scope.madLib.noun2 = '';
+    $scope.madLib.insect = '';
+    $scope.madLib.noun3 = '';
+    $scope.madLib.verb1 = '';
+    $scope.madLib.h3Show = false;
+  });
+</script>
+
+<form>
+  <h3>Girl's Name</h3>
+  <input type="text" class="form-control" ng-model="madLib.name" placeholder="">
+  <h3>Adjective</h3>
+  <input type="text" class="form-control" ng-model="madlib.adj" placeholder="">
+  <h3>Plural Noun</h3>
+  <input type="text" class="form-control" ng-model="madlib.noun1" placeholder="">
+  <h3>Plural Noun</h3>
+  <input type="text" class="form-control" ng-model="madlib.noun2" placeholder="">
+  <h3>An Insect, plural</h3>
+  <input type="text" class="form-control" ng-model="madlib.insect" placeholder="">
+  <h3>Plural Noun</h3>
+  <input type="text" class="form-control" ng-model="madLib.noun3" placeholder="">
+  <h3>A verb ending in "s"</h3>
+  <input type="text" class="form-control" ng-model="madLib.verb1" placeholder="">
+  <br/>
+  <button ng-model="visited" type="submit" name="button" ng-click="madLib.h3Show=!madLib.h3Show">SUBMIT!</button>
+</form>
+
+<h3 ng-show="madLib.h3Show">
+  I'm in love with {{ madLib.name }}. She's so {{}}! She has a big flat {{}},
+  and when our {{}} meet, I get {{}} in my stomach. I've
+  fallen for her like a ton of {{}}, and she {{}} me, too. But I think she's got
+  another boyfriend. What should I do?
+</h3>
+
+
+
+
+
+
+
+________________________________________________________________________________
+
+    <div ng-controller="HelloController">
+      <h2><span id="currency-default">{{ 3.14159265359 | currency : "€" : 2}}</h2>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.4/angular.min.js"></script>
+    <script>
+    angular.module("myapp", [])
+      .controller("HelloController", function($scope) {
+        $scope.hello = {};
+        $scope.hello.title = "Zach";
+      });
+    </script>
+  </body>
+</html>
