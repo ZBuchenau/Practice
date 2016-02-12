@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var knex = require('../db/knex');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -7,17 +8,20 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/books', function(req, res, next){
-  res.send('Book Page');
-  res.render('books');
+  knex.select().from("book_info")
+    .then(function(data) {
+      // console.log(info);
+      res.render('books', {id: data[0].id, bookName: data[0].book_title});
+    });
 });
 
-router.get('/books/edit', function(req, res, next){
+router.post('/books/edit', function(req, res, next){
   res.send('Edit Book Page');
 
   res.render('editBook');
 });
 
-router.get('/books/delete', function(req, res, next){
+router.post('/books/delete', function(req, res, next){
   res.send('Delete Book Page');
 
   res.render('deleteBook');

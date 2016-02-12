@@ -27,7 +27,6 @@ exports.up = function(knex, Promise) {
       table.string('author3_portrait', 255);
       table.text('author3_biography');
     })
-
   ]);
 };
 
