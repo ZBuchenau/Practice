@@ -1,0 +1,138 @@
+html {
+  background-color: #DEE0CC;
+}
+
+header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.sideBar {
+  position: fixed;
+    top: 15vh;
+    left: 1vw;
+  margin-left: 1rem;
+  width: 10vw;
+}
+
+.booksLink, .authorsLink {
+  height: 20vh;
+  border: .1rem solid black;
+  width: 100%;
+  margin-top: 1rem;
+  display: table;
+  text-align: center;
+}
+
+aside article h3 {
+  /* Safari */
+-webkit-transform: rotate(-90deg);
+/* Firefox */
+-moz-transform: rotate(-90deg);
+/* IE */
+-ms-transform: rotate(-90deg);
+/* Opera */
+-o-transform: rotate(-90deg);
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+font-size: 1.5rem;
+display: table-cell;
+vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+  color: #524B42;
+}
+
+main {
+  width: 75vw;
+  float: right;
+  position: relative;
+  margin-right: 5vw;
+}
+
+.bookTotalInfo {
+  position: relative;
+  margin-bottom: 2rem;
+  height:  auto;
+  border: .1rem solid black;
+}
+
+.addBook {
+  position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.addBookButton {
+  height: 2rem;
+  width: 10rem;
+}
+
+.bookImage {
+  width: 15vw;
+  display: inline;
+  float: left;
+}
+
+.bookImage img {
+  width: 15vw;
+  position: absolute;
+    top: 3rem;
+
+}
+
+.bookInfo {
+  width: 55vw;
+  float: left;
+  display: inline;
+  position: absolute;
+  top: 15%;
+  left: 25%;
+}
+
+ul {
+  list-style-type: none;
+  float: right;
+  position: absolute;
+    top: 0;
+    right: 0;
+}
+
+li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+li a {
+  color: darkblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

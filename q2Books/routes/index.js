@@ -11,14 +11,16 @@ router.get('/books', function(req, res, next){
   knex.select().from("book_info")
     .then(function(data) {
       // console.log(info);
-      res.render('books', {id: data[0].id, bookName: data[0].book_title});
+      res.render('books', {id: data[0].id, bookTitle: data[0].book_title, bookUrl: data[0].book_cover_url, bookDescription: data[0].book_description, bookGenre: data[0].book_genre});
     });
 });
 
 router.post('/books/edit', function(req, res, next){
-  res.send('Edit Book Page');
-
-  res.render('editBook');
+  knex('book_info').insert(req.body)
+  .then(function(res){
+    // console.log(res);
+  });
+  res.send(req.body);
 });
 
 router.post('/books/delete', function(req, res, next){

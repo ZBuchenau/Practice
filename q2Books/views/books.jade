@@ -3,7 +3,39 @@ html
   head
     meta(charset='utf-8')
     title
-    link(rel='stylesheet', href='main.css', charset='utf-8')
+    link(rel='stylesheet', href='./stylesheets/normalize.css', media='screen', title='no title', charset='utf-8')
+    link(rel='stylesheet', href='./stylesheets/bookStyle.css', media='screen', title='no title', charset='utf-8')
   body
-  p #{id}
-  p #{bookName}
+    // ######## Header #########
+    header
+      img(src='', alt='')
+      h1 Galvanize-Reads
+      section
+        form.addBook(action='addBook.html', method='post')
+          button.addBookButton(type='submit', name='button') ADD A BOOK
+    // ######## Side Bar #########
+    aside.sideBar
+      a(href='books.html')
+        article.booksLink
+          h3 Books
+      a(href='authors.html')
+        article.authorsLink
+          h3 Authors
+    // ######## Main Body #########
+    main
+      section.bookImage
+        article
+          img(src='#{bookUrl}', alt='')
+      section.bookInfo
+        article
+          h2 #{bookTitle}
+          h3 Author(s): hello and goodbye
+          h3 Genre: #{bookGenre}
+        article.alterLinks
+          ul
+            li
+              a(href='') Edit Book
+            li
+              a(href='#') Delete Book
+        article.bookDescription
+          p #{bookDescription}

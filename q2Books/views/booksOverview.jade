@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    title
+    link(rel='stylesheet', href='../stylesheets/main.css', charset='utf-8')
+  body
+  p #{id}
+  p #{bookName}
+
+  form(method='POST' action='/books/edit')
+    input(type="text" name='book_title')
+    input(type="submit" value="submit")

@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="../public/stylesheets/main.css" media="screen" title="no title" charset="utf-8">
-  </head>
-  <body>
-    <header>
-      <h1>Galvanize-reads</h1>
-    </header>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="normalize.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="bookStyle.css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+
+<!-- ######## Header #########  -->
+  <header>
+    <img src="" alt="" />
+    <h1>Galvanize-Reads</h1>
+
+    <section>
+      <form class="addBook" action="addBook.html" method="post">
+        <button class="addBookButton" type="submit" name="button">ADD A BOOK</button>
+      </form>
+    </section>
+  </header>
+
+<!-- ######## Side Bar #########  -->
+  <aside class="sideBar">
+
+      <a href="books.html">
+        <article class="booksLink">
+          <h3>Books</h3>
+        </article>
+      </a>
+
+      <a href="authors.html">
+        <article class="authorsLink">
+          <h3>Authors</h3>
+        </article>
+      </a>
+
+  </aside>
+
+  <!-- ######## Main Body #########  -->
+  <main>
+
+
+    <section>
+      <article class="bookImage">
+        <img src="" alt="" />
+      </article>
+      <article class="">
+        <h2>Book One</h2>
+        <h3>Author(s): hello and goodbye</h3>
+        <h3>Genre: Python</h3>
+      </article>
+      <article class="alterLinks">
+          <ul>
+            <li>
+              <a href="">Edit Book</a>
+            </li>
+            <li>
+              <a href="#">Delete Book</a>
+            </li>
+
+          </ul>
+      </article>
+      <article class="bookDescription">
+        <p>
+          "This book offers Python programmers one place to look when they need help remembering or deciphering the syntax of this open source language and its many powerful but scantily documented modules. This comprehensive reference guide makes it easy to look
+          up the most frequently needed information--not just about the Python language itself, but also the most frequently used parts of the standard library and the most important third-party extensions."
+        </p>
+      </article>
+    </section>
+  </main>
+
+
+</body>
+
 </html>
