@@ -3,10 +3,41 @@ html
   head
     meta(charset='utf-8')
     title
-    link(rel='stylesheet', href='../stylesheets/main.css', charset='utf-8')
+    link(rel='stylesheet', href='./stylesheets/normalize.css', media='screen', title='no title', charset='utf-8')
+    link(rel='stylesheet', href='./stylesheets/addBook.css', media='screen', title='no title', charset='utf-8')
   body
-  p #{id}
-  p #{bookName}
+    // ######## Header #########
+    header
+      img(src='', alt='')
+      h1 Galvanize-Reads
+    // ######## Side Bar #########
+    aside.sideBar
+      a(href='books.html')
+        article.booksLink
+          h3 Books
+      a(href='authors.html')
+        article.authorsLink
+          h3 Authors
+    main
+      form.addBookForm(action='books', method='post')
+        label(for='book_title') Title:
+        input(type='text', name='book_title', value='')
+        label(for='book_genre') Genre:
+        input(type='text', name='book_genre', value='')
+        label(for='bookDescription') Book Description:
+        textarea(name='book_descrition', rows='8', cols='40')
+        label(for='book_cover_url') Book Cover Image URL:
+        input(type='text', name='book_cover_url', value='')
+        label(for='author1_firstname') Author 1 First Name:
+        input(type='text', name='author1_firstname', value='')
+        label(for='author1_lastname') Author 1 Last Name
+        input(type='text', name='author1_lastname', value='')
+        label(for='author1_portrait') Author 1 Portrait URL
+        input(type='text', name='author1_portrait', value='')
+        label(for='author1_biography') Author 1 Biography
+        input(type='text', name='author1_biography', value='')
+        input.btn(type='submit', value='Submit Book To Database')
+
 
   form(method='POST' action='/books/edit')
     input(type="text" name='book_title')

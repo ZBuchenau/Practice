@@ -10,8 +10,8 @@ html
     header
       img(src='', alt='')
       h1 Galvanize-Reads
-      section
-        form.addBook(action='addBook.html', method='post')
+      section.addButton
+        form.addBook(action='books/add', method='post')
           button.addBookButton(type='submit', name='button') ADD A BOOK
     // ######## Side Bar #########
     aside.sideBar
